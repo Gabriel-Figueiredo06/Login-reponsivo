@@ -1,0 +1,297 @@
+@font-face {
+  font-family: Nexa;
+  src: url("Nexa-Trial-Light.ttf") format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Ave;
+  src: url("averox.otf") format(opentype);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Caviar;
+  src: url("CaviarDreams.ttf") format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body,
+form {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+#fundo-color {
+  background-color: #ffa000;
+  width: 45%;
+}
+
+#fundo-color img {
+  width: 500px;
+  position: absolute;
+  top: 120px;
+  left: 45px;
+  margin-top: 80px;
+}
+
+#fundo-color {
+  display: flex;
+  justify-content: center;
+}
+
+#fundo-color h1 {
+  margin-top: 120px;
+  font-size: 40px;
+  font-family: "Caviar";
+  letter-spacing: 2px;
+}
+
+main {
+  flex: 1;
+  height: 100%;
+}
+
+#form {
+  background-color: #000223;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+}
+#fundo-login {
+  background-color: #7c521b;
+  height: 75%;
+  width: 60%;
+  border-radius: 25px;
+  margin-top: 50px;
+}
+
+#fundo-login h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 70px;
+  font-family: "Ave";
+  letter-spacing: 2px;
+}
+
+#fundo-login input {
+  background-color: #7c521b;
+  border: none;
+  border-bottom: 1px solid#FFA000;
+  display: block;
+  margin-bottom: 50px;
+  margin-left: 70px;
+  width: 300px;
+  height: 36px;
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+#fundo-login input[type="submit"] {
+  background-color: #fffafe;
+  color: #111;
+  border-radius: 25px;
+  margin-top: 50px;
+  border: 1px solid #ffa000;
+}
+
+input::placeholder {
+  color: #ffffff9a;
+}
+
+.ancora-cadastro {
+  display: flex;
+  justify-content: center;
+}
+
+.ancora-cadastro a {
+  text-decoration: none;
+  color: #ffa000;
+  margin-left: 4px;
+}
+
+#escolha-cadastro {
+  position: absolute;
+  top: 32px;
+  right: 30px;
+  border-radius: 20px;
+  color: #fffafe;
+}
+
+.btns-choice {
+  display: flex;
+  font-family: "Nexa";
+  font-weight: bold;
+  text-transform: up;
+}
+
+.btns-choice a {
+  text-decoration: none;
+  color: #222;
+  font-size: 16px;
+}
+
+#btn1 {
+  background-color: #ffa000;
+  padding: 7px 9px 7px 9px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px 0px 0px 20px;
+}
+
+#btn2 {
+  background-color: #fffafe;
+  color: #000223;
+  padding: 7px 9px 7px 9px;
+  width: 100px;
+  border-radius: 0px 20px 20px 0px;
+}
+
+#forgot-pass-cont {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#forgot-pass-cont a {
+  text-decoration: none;
+  color: #fffafe;
+}
+
+
+/*SMALL LAPTOPS*/
+@media (max-width: 1110px) {
+  #fundo-login input {
+    margin-left: 35px;
+  }
+
+  #fundo-color img {
+    position: absolute;
+    left: -10px;
+  }
+}
+
+/*TABLET 900px*/
+@media (max-width: 900px) {
+  #fundo-login {
+    position: absolute;
+    top: 240px;
+    width: 330px;
+    height: 520px;
+  }
+
+  #fundo-color h1 {
+    margin-top: 300px;
+  }
+
+  #fundo-login h2 {
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+
+  #fundo-login input {
+    width: 200px;
+    margin-left: 60px;
+  }
+
+  #fundo-login input[type="password"] {
+    margin-bottom: 50px;
+  }
+
+  #fundo-login input[type="submit"] {
+    margin-bottom: 10px;
+    height: 40px;
+  }
+
+  #fundo-color img {
+    width: 400px;
+    position: absolute;
+    top: 320px;
+    left: -20px;
+  }
+
+  .ancora-cadastro p {
+    display: none;
+  }
+
+  .ancora-cadastro {
+    background-color: #ffa000;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 60px;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .ancora-cadastro a {
+    color: #fffafe;
+  }
+
+  #escolha-cadastro {
+    display: none;
+  }
+
+  #forgot-pass-cont {
+    display: flex;
+    justify-content: center;
+  }
+
+  #forgot-pass {
+    margin-top: 40px;
+  }
+
+  #forgot-pass a {
+    text-decoration: none;
+    color: #ffa000;
+  }
+
+  #forgot-pass-cont a {
+    text-decoration: none;
+    color: #fffafe;
+    font-family: "Nexa";
+  }
+
+  #forgot-pass {
+    margin-top: 10px;
+  }
+}
+
+/*Celular*/
+@media (max-width: 440px) {
+  #fundo-color {
+    display: none;
+  }
+
+  #fundo-login {
+    position: absolute;
+    top: 70px;
+    margin-left: 5px;
+  }
+
+  #forgot-pass a {
+    color: #fffafe;
+    font-family: "Nexa";
+    font-size: 12px;
+  }
+
+  #fundo-login[type="submit"] {
+    font-family: "Nexa";
+  }
+}
